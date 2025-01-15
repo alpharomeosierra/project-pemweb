@@ -144,28 +144,24 @@
                 <div class="team-card">
                     <img src="https://gdm.id/wp-content/uploads/2024/08/desain-kandang-maggot.webp" alt="Team Member" class="team-img">
                     <h5>Maggot Kecil</h5>
-                    <p>Rp 15.000</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkLfJ9nIQYpcbmvAnYesjgmFuNxUUBrm2Kw&s" alt="Team Member" class="team-img">
                     <h5>Maggot Sedang</h5>
-                    <p>Rp 35.000</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-card">
                     <img src="https://waste4change.com/blog/wp-content/uploads/image-136.png" alt="Team Member" class="team-img">
                     <h5>Maggot Besar</h5>
-                    <p>Rp 50.000</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-card">
                     <img src="https://down-id.img.susercontent.com/file/5c502b5d4031d9f4764697877e9e6fbf" alt="Team Member" class="team-img">
                     <h5>Telur Maggot</h5>
-                    <p>Rp 10.000</p>
                 </div>
             </div>
         </div>
