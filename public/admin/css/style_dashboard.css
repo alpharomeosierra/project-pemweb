@@ -115,47 +115,20 @@ a {
 }
 .table-container {
     margin-top: 1px;
+    margin-left: 30vh;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+
+.table-container-prod {
+    margin-top: 10px;
     margin-left: 55vh;
     margin-bottom: 20px;
     width: 50%;
     align-items: center;
 
 }
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-  }
-  
-  th {
-    background-color: #f8f9fa;
-    font-weight: bold;
-  }
-  
-  td img {
-    max-width: 100px; /* Atur ukuran gambar */
-    height: auto;
-    border-radius: 5px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #ddd;
-  }
-
-  td img {
-    max-width: 50px;
-    height: auto;
-  }
 
 .content {
     flex-grow: 1; /* Take remaining space */
