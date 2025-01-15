@@ -130,15 +130,7 @@
 
     <!-- Team Section -->
     <div class="team-section container">
-        <p class="deskripsi">
-                Maggot adalah larva dari lalat, terutama lalat rumah (Musca domestica) atau lalat hijau (Lucilia sericata),
-        yang memiliki tubuh lunak berwarna putih atau krem dengan bentuk silinder memanjang tanpa kaki. Larva ini biasanya
-        ditemukan di lingkungan kaya bahan organik yang membusuk, seperti sampah, kotoran hewan, atau bangkai, karena di sanalah
-        lalat dewasa bertelur. Sebagai salah satu tahap dalam siklus hidup lalat, maggot berperan penting dalam proses dekomposisi
-        alami dengan memakan bahan organik yang membusuk, sehingga membantu siklus nutrisi di alam. Selain itu, maggot juga dimanfaatkan
-        oleh manusia dalam berbagai bidang, seperti terapi larva (maggot therapy) untuk membersihkan jaringan mati pada luka kronis,
-        sebagai pakan alternatif yang kaya protein untuk ikan dan unggas, serta untuk mengolah sampah organik secara cepat dan efisien.
-        </p>
+        <p class="deskripsi">Maggotopia adalah platform e-commerce inovatif yang menyediakan berbagai produk berbasis maggot untuk mendukung keberlanjutan dan efisiensi di berbagai sektor. Kami berfokus pada solusi berbasis maggot, mulai dari pakan ternak berkualitas tinggi, pupuk organik premium, hingga layanan pengelolaan limbah organik.</p>
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="team-card">
