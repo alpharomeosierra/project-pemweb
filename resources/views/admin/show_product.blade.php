@@ -43,7 +43,7 @@
         <div class="table-container">
             <h2 class="mb-4 text-center">Daftar Produk</h2>
             <table class="table table-striped table-bordered text-center">
-                <thead>
+                <thead class="table-dark">
                     <tr>
                         <th>Nama Produk</th>
                         <th>Deskripsi</th>
@@ -56,24 +56,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($product as $product)
+                    @foreach($product as $item)
                     <tr>
-                        <td>{{$product->title}}</td>
-                        <td>{{$product->description}}</td>
-                        <td>{{$product->quantity}}</td>
-                        <td>{{$product->category}}</td>
-                        <td>{{$product->price}}</td>
-                        <td>{{$product->discount_price}}</td>
-                        <td><img src="/product/{{$product->image}}" style="max-width: 100px; max-height: 100px;"></td>
+                        <td>{{ $item->title }}</td>
+                        <td>{{ $item->description }}</td>
+                        <td>{{ number_format($item->quantity) }}</td>
+                        <td>{{ $item->category }}</td>
+                        <td>Rp {{ number_format($item->price, 0, ',', '.') }}</td>
+                        <td>Rp {{ number_format($item->discount_price, 0, ',', '.') }}</td>
                         <td>
-                            <a onclick="return confirm('Hapus Data?')"class="btn btn-sm btn-danger" href="{{url('delete_product',$product->id)}}">Hapus</a>
-                            <a class="btn btn-sm btn-primary" href="{{url('update_product',$product->id)}}">Ubah</a>
+                            <img src="/product/{{ $item->image }}" alt="Produk" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
                         </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
+                        <td>
+                            <a onclick="return confirm('Hapus Data?')" class="btn btn-sm btn-danger" href="{{ url('delete_product', $item->id) }}">Hapus</a>
+                            <a class="btn btn-sm btn-primary" href="{{ url('update_product', $item->id) }}">Ubah</a>
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
 </main>
