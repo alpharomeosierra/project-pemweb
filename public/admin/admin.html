@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin Dashboard for E-Commerce">
+    <meta name="author" content="Your Name">
+    <title>Maggotopia | Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin/css/style_dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h4 class="text-center">Maggotopia Admin</h4>
+        <a href="#">Dashboard</a>
+        <a href="{{url('view_category')}}">Kategori</a>
+        <button class="toggle-btn">Produk</button>
+        <div class="submenu">
+            <a href="{{url('/view_product')}}">Lihat Produk</a>
+            <a href="#">Tambah Produk</a>
+        </div>
+        <a href="#">Pesanan</a>
+        <form method="POST" action="{{ route('logout') }}" style="margin: 0;">
+            @csrf
+            <button type="submit" class="btn nav-link">
+                {{ __('Keluar') }}
+            </button>
+        </form>
+    </div>
+    <div class="content">
+        <h1>Welcome, Admin</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-white bg-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Products</h5>
+                        <p class="card-text">Manage your products here.</p>
+                        <a href="#" class="btn btn-light">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-success">
+                    <div class="card-body">
+                        <h5 class="card-title">Orders</h5>
+                        <p class="card-text">Check and manage orders.</p>
+                        <a href="#" class="btn btn-light">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-warning">
+                    <div class="card-body">
+                        <h5 class="card-title">Customers</h5>
+                        <p class="card-text">Manage your customers here.</p>
+                        <a href="#" class="btn btn-light">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-danger">
+                    <div class="card-body">
+                        <h5 class="card-title">Analytics</h5>
+                        <p class="card-text">View sales and performance.</p>
+                        <a href="#" class="btn btn-light">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // submenu
+        document.querySelector('.toggle-btn').addEventListener('click', function() {
+            const submenu = document.querySelector('.submenu');
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
