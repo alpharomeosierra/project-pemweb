@@ -42,7 +42,7 @@
     <div class="content">
         <div class="table-container">
             <h2 class="mb-4 text-center">Daftar Produk</h2>
-            <table class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered text-center">
                 <thead>
                     <tr>
                         <th>Nama Produk</th>
