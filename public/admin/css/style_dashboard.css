@@ -113,10 +113,18 @@ a {
 .form-container {
     width: 50%;
 }
+
+.table-kategori {
+    margin-top: 1px;
+    margin-left: 31vh;
+    padding: 20px;
+    align-items: center;
+}
+
 .table-container {
     margin-top: 1px;
-    margin-left: 30vh;
-    margin-bottom: 20px;
+    margin-left: 31vh;
+    padding: 20px;
     align-items: center;
 
 }
