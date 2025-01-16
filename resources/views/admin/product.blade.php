@@ -20,7 +20,7 @@
             <a href="{{url('/show_product')}}">Lihat Produk</a>
             <a href="{{url('/view_product')}}">Tambah Produk</a>
         </div>
-        <a href="#">Pesanan</a>
+        <a href="{{url('/show_order')}}">Pesanan</a>
         <form method="POST" action="{{ route('logout') }}" style="margin: 0;">
             @csrf
             <button type="submit" class="btn nav-link">

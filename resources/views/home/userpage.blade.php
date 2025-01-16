@@ -10,8 +10,15 @@
 <body>
     @include('home.navbar')
     <header>
+        <div class="container">
             <h1>Maggotopia</h1>
-            <h2>Maggotopia adalah platform e-commerce inovatif yang menyediakan berbagai produk berbasis maggot untuk mendukung keberlanjutan dan efisiensi di berbagai sektor. Kami berfokus pada solusi berbasis maggot, mulai dari pakan ternak berkualitas tinggi, pupuk organik premium, hingga layanan pengelolaan limbah organik.</h2>
+            <h2>Maggot adalah larva dari lalat, terutama lalat rumah (Musca domestica) atau lalat hijau (Lucilia sericata),
+            yang memiliki tubuh lunak berwarna putih atau krem dengan bentuk silinder memanjang tanpa kaki. Larva ini biasanya
+            ditemukan di lingkungan kaya bahan organik yang membusuk, seperti sampah, kotoran hewan, atau bangkai, karena di sanalah
+            lalat dewasa bertelur. Sebagai salah satu tahap dalam siklus hidup lalat, maggot berperan penting dalam proses dekomposisi
+            alami dengan memakan bahan organik yang membusuk, sehingga membantu siklus nutrisi di alam.</h2>
+        </div>
+        <div class="container">
             <div class="button-home">
                 <a href="{{url('view_aboutus')}}">
                     <button type="button" class="btn">Pelajari Lebih Lanjut</button>
@@ -25,25 +32,26 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;margin-top: 30px;">
-                        <img src="https://placehold.co/100" class="card-img-top" alt="...">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6Jgp7gJIPJFT3S1rTnm1c8QcNY4nfkrS-Q&s" alt="...">
                         <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Pengelolaan Limbah Organik</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;margin-top: 30px;">
-                        <img src="https://placehold.co/100" class="card-img-top" alt="...">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6Jgp7gJIPJFT3S1rTnm1c8QcNY4nfkrS-Q&s" alt="...">
                         <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Sumber Protein Berkualitas Tinggi</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;margin-top: 30px;">
-                        <img src="https://placehold.co/100" class="card-img-top" alt="...">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6Jgp7gJIPJFT3S1rTnm1c8QcNY4nfkrS-Q&s" alt="...">
                         <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Produksi Pupuk Organik
+                        </p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +64,7 @@
                     @foreach($product as $product)
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card" style="width: 18rem;margin-top: 20px;">
-                            <img src="product/{{$product->image}}" class="card-img-top" alt="...">
+                            <img src="product/{{$product->image}}" class="card-img-top" alt="..." style="max-width: 300px; max-height: 300px; object-fit: cover;">
                             <div class="card-body">
                             <h5 class="card-title">{{$product->title}}</h5>
                             <h5 class="card-title">Rp.{{$product->price}}</h5>
@@ -101,7 +109,7 @@
     </div>
     </main>
     <footer>
-        <p></p>
+        <p>&copy; 2025 Maggotopia. Semua hak cipta dilindungi.</p>
     </footer>
 </body>
 

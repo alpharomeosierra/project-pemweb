@@ -69,7 +69,7 @@ h3 {
 .button-home {
 position: absolute;
 left: 12vw; 
-top: 29vw;
+top: 34vw;
 background-color: #f8c444 !important;
 border-radius: 10px;
 }
@@ -136,6 +136,10 @@ border-radius: 10px;
 
 footer{
     background-color: #f8c444;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     padding-top: 18px;
+}
+
+footer p{
+    text-align: center;
 }
