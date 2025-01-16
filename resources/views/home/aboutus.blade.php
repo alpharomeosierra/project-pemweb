@@ -57,10 +57,9 @@
         }
         footer {
             background-color: #f8c444;
-            padding-bottom: 15px;
+            padding-bottom: 5px;
             padding-top: 18px;
             text-align: center;
-            color: #fff;
         }
         .navbar-card {
             position: fixed;
@@ -93,10 +92,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="{{url('view_userpage')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tentang Kami</a>
+                            <a class="nav-link" href="{{url('view_aboutus')}}">Tentang Kami</a>
                         </li>
                         @if (Route::has('login'))
                         @auth
