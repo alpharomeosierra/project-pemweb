@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="admin/css/style_dashboard.css">
 </head>
+
 <body>
 <div class="sidebar">
     <h2 class="text-center">Maggotopia Admin</h2>
@@ -65,15 +66,20 @@
 
 <!-- Tambah Kategori -->
 <div class="main-content">
-    <div class="form-container w-50">
+    <div class="form-container">
         <h1 class="mb-4 text-center">Tambah Kategori</h1>
-        <form action="{{ url('/add_category') }}" method="POST">
+        <form action="{{ url('/add_category') }}" method="POST" class="p-4 shadow-sm rounded bg-light">
             @csrf
-            <div class="mb-3">
+            <div class="mb-4">
                 <label for="category_name" class="form-label">Nama Kategori</label>
-                <input type="text" name="category" id="category" class="form-control" placeholder="Masukkan Kategori" required>
+                <input type="text" 
+                       name="category" 
+                       id="category" 
+                       class="form-control form-control-lg" 
+                       placeholder="Masukkan Nama Kategori"
+                       required>
             </div>
-            <button type="submit" class="btn btn-warning w-100">Tambah Kategori</button>
+            <button type="submit" class="btn btn-warning btn-lg w-100">Tambah Kategori</button>
         </form>
     </div>
 </div>

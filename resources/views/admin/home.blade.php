@@ -30,7 +30,7 @@
     </div>
     <div class="main-content">
         <div class="header">
-            <h1>Selamat Datang!</h1>
+            <h1>Selamat Datang Admin!</h1>
         </div>
         <div class="card-container">
             <div class="card">
