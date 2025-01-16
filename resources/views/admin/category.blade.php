@@ -19,22 +19,6 @@
     <div class="submenu">
         <a href="{{url('/show_product')}}">Lihat Produk</a>
         <a href="{{url('/view_product')}}">Tambah Produk</a>
-        <h2 class="text-center">Maggotopia Admin</h2>
-        <div class="divider"></div>
-        <a href="{{url('view_adhome')}}">Dashboard</a>
-        <a href="{{url('view_category')}}">Kategori</a>
-        <button class="toggle-btn">Produk</button>
-        <div class="submenu">
-            <a href="{{url('/show_product')}}">Lihat Produk</a>
-            <a href="{{url('/view_product')}}">Tambah Produk</a>
-        </div>
-        <a href="{{url('/show_order')}}">Pesanan</a>
-        <form method="POST" action="{{ route('logout') }}" style="margin: 0;">
-            @csrf
-            <button type="submit" class="btn nav-link">
-                {{ __('Keluar') }}
-            </button>
-        </form>
     </div>
     <a href="#">Pesanan</a>
     <form method="POST" action="{{ route('logout') }}" style="margin: 0;">

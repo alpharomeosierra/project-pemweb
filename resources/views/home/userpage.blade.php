@@ -64,7 +64,7 @@
                     @foreach($product as $product)
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card" style="width: 18rem;margin-top: 20px;">
-                            <img src="product/{{$product->image}}" class="card-img-top" alt="...">
+                            <img src="product/{{$product->image}}" class="card-img-top" alt="..." style="max-width: 300px; max-height: 300px; object-fit: cover;">
                             <div class="card-body">
                             <h5 class="card-title">{{$product->title}}</h5>
                             <h5 class="card-title">Rp.{{$product->price}}</h5>
