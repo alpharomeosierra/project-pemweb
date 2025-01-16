@@ -109,7 +109,7 @@
     </div>
     </main>
     <footer>
-        <p></p>
+        <p>&copy; 2025 Maggotopia. Semua hak cipta dilindungi.</p>
     </footer>
 </body>
 

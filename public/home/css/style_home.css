@@ -136,6 +136,10 @@ border-radius: 10px;
 
 footer{
     background-color: #f8c444;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     padding-top: 18px;
+}
+
+footer p{
+    text-align: center;
 }
